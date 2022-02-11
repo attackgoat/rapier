@@ -101,7 +101,7 @@ impl RigidBodySet {
         }
     }
 
-    pub(crate) fn take_modified(&mut self) -> Vec<RigidBodyHandle> {
+    pub fn take_modified(&mut self) -> Vec<RigidBodyHandle> {
         std::mem::replace(&mut self.modified_bodies, vec![])
     }
 
